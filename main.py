@@ -8,6 +8,7 @@ import numpy as np
 
 # Make cudnn CTC deterministic
 torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
 
 # Arguments
 parser = argparse.ArgumentParser(description='Training E2E asr.')

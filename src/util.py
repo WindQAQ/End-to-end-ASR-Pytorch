@@ -61,8 +61,7 @@ def init_weights(module):
                     n *= k
                 stdv = 1. / math.sqrt(n)
                 data.normal_(0, stdv)
-            else:
-                raise NotImplementedError
+
 def init_gate(bias):
     n = bias.size(0)
     start, end = n // 4, n // 2
